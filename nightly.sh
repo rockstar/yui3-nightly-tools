@@ -4,8 +4,8 @@ CWD=`pwd`
 TEMPDIR=$CWD/tmp
 TARGET=$CWD/build
 
-YUIGITBRANCH=git@github.com:yui/yui3.git
-BUILDGITBRANCH=git@github.com:yui/builder.git
+YUIGITBRANCH=git://github.com/yui/yui3.git
+BUILDGITBRANCH=git://github.com/yui/builder.git
 
 DATE=`date "+%Y%m%d"`
 
