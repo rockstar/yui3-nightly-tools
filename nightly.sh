@@ -15,7 +15,7 @@ cd $TEMPDIR
 git clone $YUIGITBRANCH
 git clone $BUILDGITBRANCH
 cd yui3/src
-ant all
+ant all -Dlint.skip=true
 cd $CWD
 mkdir -p $TARGET/$DATE
 cp -r $TEMPDIR/yui3/build/* $TARGET/$DATE
