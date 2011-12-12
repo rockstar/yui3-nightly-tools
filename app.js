@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var combo = require('combohandler'),
     express = require('express'),
     app = express.createServer();
