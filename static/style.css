@@ -1,0 +1,18 @@
+body {
+    font-family: Ubuntu, Helvetica, Arial;
+    font-size: 1.2em;
+    line-height: 2.0em;
+    margin: 10px auto;
+    width: 720px;
+}
+div {
+    margin: .5em 0;
+}
+pre {
+    width: 70%;
+    border: 1px solid #333;
+    line-height: 1.5hm;
+    background-color: #ccc;
+    padding: 1em;
+    margin: 0 auto;
+}

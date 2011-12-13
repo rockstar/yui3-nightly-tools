@@ -1,0 +1,25 @@
+<h1>YUI 3 Nightly</h1>
+
+<div>Whether you're using the Yahoo!'s CDN, your own combo loader, or loading
+files separately<strong>*cough*</strong>masochist<strong>*cough*</strong>, it
+can be pretty complicated to test your existing code against upcoming YUI
+releases.</div>
+
+<div>Enter the YUI 3 Nightly combo loader. Each night, a new version of YUI 3's
+source tree is built and served from /yui.  All you need to do is to point your
+YUI object to the nightly combo loader.</div>
+
+<div>Add the following code to your main template before any calls to
+<code>YUI().use()</code>.</div>
+
+<pre><code>YUI_config = {
+  comboBase: 'http://lolcathost:8082/yui?',
+  root: ''
+};</code></pre>
+
+<div><strong>Note:</strong> Do this in a development instance. If you point
+production to this development code, you deserve everything you get.</div>
+
+<div>There's nothing earth-shattering about this.  If you're curious about the
+code, you can <a href="https://github.com/rockstar/yui3-nightly-tools">fork
+it on github</a>. Contributions welcome.</div>
