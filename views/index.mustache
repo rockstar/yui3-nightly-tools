@@ -9,13 +9,20 @@ releases.</div>
 source tree is built and served from /yui.  All you need to do is to point your
 YUI object to the nightly combo loader.</div>
 
-<div>Add the following code to your main template before any calls to
-<code>YUI().use()</code>.</div>
+<div>To use this, simply use this as your seed file:</div>
 
-<pre><code>YUI_config = {
-  comboBase: 'http://yuinightly.kludg.com/yui?',
-  root: ''
-};</code></pre>
+<pre><code>
+&lt;script src="http://yuinightly.kludg.com/seed"&gt;&lt;/script&gt;
+</code></pre>
+
+<div>
+The seed file also supports the 3 default YUI filter's: <code>min, raw, filter</code>
+</div>
+<pre><code>
+&lt;script src="http://yuinightly.kludg.com/seed?filter=min"&gt;&lt;/script&gt;
+&lt;script src="http://yuinightly.kludg.com/seed?filter=raw"&gt;&lt;/script&gt;
+&lt;script src="http://yuinightly.kludg.com/seed?filter=debug"&gt;&lt;/script&gt;
+</code></pre>
 
 <div><strong>Note:</strong> Do this in a development instance. If you point
 production to this development code, you deserve everything you get.</div>
