@@ -3,6 +3,8 @@
 var combo = require('combohandler'),
     express = require('express'),
     stache = require('stache'),
+    seed = require('./lib/seed'),
+    stamp = 'yui3-nightly',
     app = express.createServer();
 
 app.configure(function() {
@@ -26,6 +28,12 @@ app.get('/', function(req, res) {
     res.render('index', {});
 });
 app.get('/yui', combo.combine({rootPath: 'build/www'}), function (req, res) {
+    res.body = res.body.replace(/@VERSION@/g, stamp);
+    res.send(res.body, 200);
+});
+
+app.get('/seed', seed.stamp({rootPath: 'build/www'}), function (req, res) {
+    res.body = res.body.replace(/@VERSION@/g, stamp);
     res.send(res.body, 200);
 });
 

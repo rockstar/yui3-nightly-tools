@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title>Nightly test</title>
+</head>
+<body>
+
+
+<script src="http://127.0.0.1:8082/seed?filter=debug"></script>
+<script>
+YUI().use('node', function(Y) {
+    Y.one('body').setStyle('backgroundColor', 'green');
+});
+</script>
+</body>
+</html>
